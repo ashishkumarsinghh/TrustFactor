@@ -7,9 +7,18 @@
   "author": "ashish kumar singh",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "jest-puppeteer": "^4.3.0",
+    "puppeteer": "^2.0.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node ./server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "jest": {
+    "preset": "jest-puppeteer"
   }
 }
