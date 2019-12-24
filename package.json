@@ -13,11 +13,13 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "node ./server/index.js"
+    "start": "nodemon ./server/index.js --watch ./server"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.7.14",
+    "nodemon": "^2.0.1"
   },
   "jest": {
     "preset": "jest-puppeteer"

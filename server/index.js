@@ -1,5 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv").config();
+const connectToMongo = require("./mongoConnect");
 const app = express();
 
 app.listen(process.env.SERVER_PORT, err => {
@@ -13,3 +14,4 @@ app.listen(process.env.SERVER_PORT, err => {
 app.get("/api", (req, res) => {
   res.send("API Gateway for TrustFactor.");
 });
+connectToMongo();
